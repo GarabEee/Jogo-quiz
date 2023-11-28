@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p>1. Qual é a montadora do carro modelo Mustang?</p>
+        <hr>
+        <input type="radio" name="q1" id="certo1">Ford<br>
+        <input type="radio" name="q1">Chevrolet<br>
+        <input type="radio" name="q1">Toyota<br>
+        <input type="radio" name="q1">Honda<br>
+        <button class="btn btn-primary next" onclick="next(1)">PRÓXIMA</button>
+    </div>
+
+    <div class="container">
+        <p>2. Qual filme ganhou o Oscar de Melhor Filme em 2021?</p>
+        <hr>
+        <input type="radio" name="q2">Nomadland<br>
+        <input type="radio" name="q2">Minari<br>
+        <input type="radio" name="q2" id="certo2">Parasita<br>
+        <input type="radio" name="q2">Judas and the Black Messiah<br>
+        <button class="btn btn-primary next" onclick="next(2)">PRÓXIMA</button>
+    </div>
+
+    <div class="container">
+        <p>3. Qual é a fórmula química da água?</p>
+        <hr>
+        <input type="radio" name="q3">CO2<br>
+        <input type="radio" name="q3">H2O2<br>
+        <input type="radio" name="q3">NaCl<br>
+        <input type="radio" name="q3" id="certo3">H2O<br>
+        <button class="btn btn-primary" onclick="result()">ENVIAR QUIZ</button>
+    </div>
+
+    <script src="jogo.js"></script>
+</body>
+
+</html>
